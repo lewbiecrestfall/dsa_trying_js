@@ -1,0 +1,132 @@
+Javascript is a dynamic, weakly typed programming language which compiled at runtime. It can be executed as part of a webpage in a browser or directly on any machine ("host environment")
+
+Breakdown definition : 
+
+1. Dynamic : no need to declare the data type of a variable explicitly
+
+example : 
+int x = 5; other programming languages
+let x = 5; in javascript code
+
+JavaScript will figures out that x is a number...
+
+2. Weakly Typed : which means that the data type of a variable can change during runtime
+
+example : 
+let x = 5;  x is a number
+x = "Hello";  Now, x is a string
+
+3. Compiled at runtime : JavaScript is interpreted and executed on-the-fly, meaning it doesn't need a separate compilation step before running. This is different from languages like Java or C++ where you typically compile the code into machine-readable code before execution.
+
+example : 
+
+let x = 5;
+console.log(x); // Output: 5
+x = "Hello";
+console.log(x); // Output: Hello
+
+
+JavaScript reads and executes these lines one by one, making changes on the spot without a prior compilation.
+
+
+4. Executed in a Browser or Any Host Environment : JavaScript can run either inside a web browser, making web pages interactive, or on any other computer environment known as a 'host,' such as servers, where it can perform various tasks beyond web development.
+
+example : browser-side , server-side
+
+//////////////////////////////////////////////////////////////////////
+
+Javascript was created to make webspages more dynamic( eg. change content on a page directly from inside the browser). originally, it was called LiveScript but due to the popularity of java, it was renamed to javascript.
+
+
+(static webpage) : has fixed content that remains the same for all users and requires a full page reload to display any updates or changes.
+(dynamic webpage) : can change its content or respond to user interactions without reloading the entire page, often achieved with JavaScript.
+
+JavaScript has nothing in common with Java.
+
+//////////////////////////////////////////////////////
+
+HOW DO WEBPAGES WORK
+
+You type your desired site name into the browser, initiating a request. The browser loads to find and display your requested webpage. When you interact with the webpage, such as clicking a button, your browser sends a request to the server. The server processes this request and responds by providing the necessary resources (HTML, CSS, JavaScript) to render the updated webpage. This cycle of user requests, server processing, and webpage rendering continues as you navigate and interact with the website.
+
+////////////////////////////////////////////////////////
+
+Netscape introduces "LiveScript/JavaScript" at 1995 
+
+
+///////////////////////////////
+
+(Variables & constant)
+
+
+Variables : A "data container
+/"data strorage"
+
+let userName = "Anas";
+userName = "Bheem"; // no need to repeat data-type ( value can change here)
+
+const totalUsers = 15; 
+totalUsers = 20 (value must not change)
+
+VARIABLE NAMING
+
+Allowed : camelCase (good practice), only letters and digits , starting with $ is allowed, starting with _ is allowed 
+
+Not Allowed : 
+user_name - (allowed but bad practice), starting with digits, no rest special characters not allowed , keywords ( let let)
+
+///////////////////////////////
+
+Operators 
+
++ , - , * , / , % , **, = 
+
+///////////////////////////////
+
+Data Types 
+
+Numbers : 2 , -3 , 22.4546
+
+Strings ( Text) : "Hi", 'Hi', `Hi`
+
+
+///////////////////////////////
+
+GLOBAL SCOPE & LOCAL SCOPE
+
+
+(1) Global Scope : A variable declared outside any function or block has global scope, accessible throughout the entire program.
+
+
+(2) Local Scope : A variable declared inside a function or block has local scope, accessible only within that function or block.
+
+// Global Scope
+var globalVariable = 10;
+
+function myFunction() {
+    // Accessing the global variable inside a function
+    console.log(globalVariable); // Output: 10
+}
+
+myFunction(); // Calling the function
+
+// Local Scope
+function anotherFunction() {
+    // Local variable is declared inside the function, making it local in scope
+    var localVariable = 5;
+    console.log(localVariable); // Output: 5
+}
+
+anotherFunction(); // Calling the function
+
+// Trying to access localVariable outside the function would result in an error
+// console.log(localVariable); // This would cause an error
+
+
+
+
+
+
+
+
+
